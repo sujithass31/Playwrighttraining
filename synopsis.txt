@@ -1,0 +1,43 @@
+Test SUite for the pages 
+
+ Objective
+
+The purpose of this test suite is to validate the functionality and user interface of 
+1.Langing page and its  navigation (index.html)
+2.Login page and its functionalities(login.html)
+3.Contact Form and  its  functionalities(form.html)
+3.Table listing of users froma  mock json (table.html)
+ It ensures that all core login scenarios are working as expected under various input conditions.
+
+
+
+Test Scenarios
+I.Langing Page - sample.spec.js(form.html)
+
+III.User Table Listing-table.spec.js(Table.html)
+
+1.Row Count Validation
+Confirms that the table body contains exactly 3 rows, matching the number of mock user entries.
+
+2.First Row Content Verification
+Checks that the first row’s cells correctly display the user data for "Anthony" (ID, Name, Age, Email).
+
+3.User Names Presence Check
+Ensures all user names ("Anthony", "Christian", "Sneha") are rendered correctly in the second column of the table.
+
+IV.Login.spec.js(Login.html)
+
+1.Verify UI elements on the login page	
+	All input fields and button are visible
+
+2.Login with valid credentials
+	"Login successful!" message is shown
+
+3.Login with invalid credentials	
+	"Invalid username or password." message
+
+4.Login with empty username
+	Error message shown
+
+5.Login with empty password	
+	Error message shown

@@ -6,12 +6,16 @@ test.describe('HTML Page Tests', () => {
     await page.goto('file:///C:/Playwright/tests/index.html');
     await page.click('#go-to-form');
     await expect(page).toHaveURL(/.*form.html/);
+    /*await page.click('#userTable');
+    await expect(page).toHaveURL(/.*table.html/);
+    await page.click('#loginForm');
+    await expect(page).toHaveURL(/.*login.html/);*/
   });
 
   test('Form Page - Form submits correctly', async ({ page }) => {
     await page.goto('file:///C:/Playwright/tests/form.html');
-    await page.fill('#name', 'John Doe');
-    await page.fill('#email', 'john@example.com');
+    await page.fill('#name', 'Sujitha');
+    await page.fill('#email', 'sujitha.sarojammal@ust.com');
     await page.click('button[type="submit"]');
     await expect(page.locator('#form-message')).toBeVisible();
   });
