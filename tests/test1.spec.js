@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 
 test('Personal website elements', async ({ page }) => {
     // Open the personal website (adjust the path to your local file)
-    await page.goto('file:///C:/Playwright/tests/index.html');
+    await page.goto('file:///C:/Playwright/tests/index_first.html');
 
     // Check if the header contains the right name
     const headerText = await page.textContent('header h1');
